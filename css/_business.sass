@@ -1,0 +1,111 @@
+.flex-container
+    width: 45%
+    display: flex
+
+.business-container-section
+    background: #fff
+    margin-top: -100px
+    .business-model
+        width: 100%
+        h1
+            font-size: 3em
+            color: $secondaryColor
+            margin-top: 100px
+            padding-top: 70px
+            text-align: center
+    .business-section
+        width: 90%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        margin: auto
+        padding-bottom: 70px
+        .business-container-1
+            @extend .flex-container
+            //margin-left: 70px
+            margin: 30px 0 30px 30px
+            .technology-container
+                width: 65%
+                .text-container
+                    width: 100%
+                    padding: 25px
+                    h3
+                        color: $primaryColor
+                    p
+                        color: $primaryColor
+            .technology-image
+                width: 35%
+                img
+                    width: 100%
+                    vertical-align: top
+                    border-radius: 10px
+                    &:hover
+                        opacity: .8
+        .business-container-2
+            @extend .flex-container
+            margin: 30px 30px 30px 0
+            .profesionals-container
+                width: 65%
+                order: 2
+                .text-container
+                    width: 100%
+                    padding: 25px
+                    h3
+                        text-align: right
+                        color: $primaryColor
+                    p
+                        text-align: right
+                        color: $primaryColor
+            .profesionals-image
+                width: 35%
+                order: 1
+                img
+                    width: 100%
+                    vertical-align: top
+                    border-radius: 10px
+                    &:hover
+                        opacity: .8
+        .business-container-3
+            @extend .flex-container
+            margin: 0 0 30px 30px
+            .clients-container
+                width: 65%
+                .text-container
+                    width: 100%
+                    padding: 25px
+                    h3
+                        color: $primaryColor
+                    p
+                        color: $primaryColor
+            .clients-image
+                width: 35%
+                img
+                    width: 100%
+                    vertical-align: top
+                    border-radius: 10px
+                    &:hover
+                        opacity: .8
+        .business-container-4
+            @extend .flex-container
+            margin: 0 30px 30px 0
+            .solutions-container
+                width: 65%
+                order: 2
+                .text-container
+                    width: 100%
+                    padding: 25px
+                    h3
+                        text-align: right
+                        color: $primaryColor
+                    p
+                        text-align: right
+                        color: $primaryColor
+            .solutions-image
+                width: 35%
+                order: 1
+                img
+                    width: 100%
+                    vertical-align: top
+                    border-radius: 10px
+                    &:hover
+                        opacity: .8

@@ -1,0 +1,79 @@
+.btn-services
+    text-decoration: none
+    background: $primaryColor
+    color: #fff
+    padding: 10px
+    display: inline-block
+    width: 100%
+    border-radius: 10px
+    text-align: center
+
+.styles-containers
+    width: 40%
+    margin-bottom: 40px
+    border-radius: 10px
+    background: #fff
+    border: 1px solid transparent
+    transition: box-shadow 0.5s ease
+
+.section-services
+    width: 100%
+    margin-top: 50px
+.services-container
+    width: 80%  
+    margin: auto
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    .services-title
+        width: 100%
+        h2
+            font-size: 2.2em
+            text-align: center
+            padding: 40px
+    .itsecurity-container
+        @extend .styles-containers
+        &:hover
+            box-shadow: 0 0 10px 5px rgba(102, 102, 102, 0.1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1)
+        .itsecurity-image
+            width: 100%
+            img
+                width: 100%
+                vertical-align: top
+                border-radius: 10px 10px 0 0
+        .itsecurity-text
+            padding: 30px
+            h3
+                font-size: 1.5em
+            p
+                font-weight: 300
+            .itsecurity-button
+                width: 100%
+                margin-top: 30px
+                a
+                    @extend .btn-services
+                    &:hover
+                        background: rgba(0, 117, 169, .7)
+    .auditory-container
+        @extend .styles-containers
+        &:hover
+            box-shadow: 0 0 10px 5px rgba(102, 102, 102, 0.1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1)
+        .auditory-image
+            width: 100%
+            img
+                width: 100%
+                vertical-align: top
+                border-radius: 10px 10px 0 0
+        .auditory-text
+            padding: 30px
+            h3
+                font-size: 1.5em
+            p
+                font-weight: 300
+            .auditory-button
+                width: 100%
+                margin-top: 30px
+                a
+                    @extend .btn-services
+                    &:hover
+                        background: rgba(0, 117, 169, .7)

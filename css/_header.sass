@@ -1,0 +1,63 @@
+*
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+
+body
+    font-family: 'Made Tommy' !important
+    font-size: 16px
+
+.btn
+    display: inline-block
+    text-decoration: none
+    padding: 10px
+
+header
+    position: sticky
+    top: 0
+    z-index: 100
+    background: #fff
+    .header-menu
+        width: 90%
+        max-width: 1200px
+        margin: auto
+        display: flex
+        align-items: center
+        .logo
+        .nav-left
+            width: 60%
+            padding: 12px
+            margin: 0 0 0 20px
+            .nav
+                a
+                    @extend .btn
+                    margin: 0 0 0 20px
+                    color: $primaryColor
+                    border-bottom: 1px solid transparent
+                    font-weight: 400
+                    font-size: 1em
+                    &:hover
+                        //background: #f2f2f2
+                        //border-radius: 10px
+                        color: $secondaryColor
+                        border-bottom: 1px solid $secondaryColor
+        .nav-right
+            width: 40%
+            padding: 12px
+            .nav-2
+                float: right
+                a
+                    @extend .btn
+                    margin: 0 30px 0 20px
+                    color: #fff
+                    font-weight: 400
+                    font-size: 1em
+                    border-radius: 10px
+                    background: $primaryColor
+                    border: 1px solid $primaryColor
+                    background-image: linear-gradient(to right, $secondaryColor 50%, transparent 50%)
+                    background-size: 200% 100%
+                    background-position: right bottom
+                    transition: background-position 0.2s ease-in-out
+                    &:hover
+                        background-position: left bottom
+                        border: 1px solid $secondaryColor

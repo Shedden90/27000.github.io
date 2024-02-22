@@ -1,0 +1,102 @@
+.styles-containers-2
+    width: 30%
+    margin-bottom: 40px
+    border-radius: 10px
+    background: #fff
+    border: 1px solid transparent
+    transition: box-shadow 0.5s ease
+
+.btn-courses
+    text-decoration: none
+    background: $primaryColor
+    color: #fff
+    padding: 10px
+    display: inline-block
+    width: 100%
+    border-radius: 10px
+    text-align: center
+
+.section-courses
+    width: 100%
+    .courses-container
+        width: 75%
+        margin: auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        padding-bottom: 100px
+        .courses-title
+            width: 100%
+            h2
+                font-size: 2.2em
+                text-align: center
+                padding: 40px
+        .courses-container-1
+            @extend .styles-containers-2
+            &:hover
+                box-shadow: 0 0 10px 5px rgba(102, 102, 102, 0.1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1)
+            .courses-container-image
+                width: 100%
+                img
+                    width: 100%
+                    vertical-align: top
+                    border-radius: 10px 10px 0 0
+            .courses-text
+                padding: 0 30px 30px 30px
+                h3
+                    font-size: 1.5em
+                p
+                    font-weight: 300
+                .courses-button
+                    width: 100%
+                    margin-top: 30px
+                    a
+                        @extend .btn-courses
+                        &:hover
+                            background: rgba(0, 117, 169, .7)
+        .courses-container-2
+            @extend .styles-containers-2
+            &:hover
+                box-shadow: 0 0 10px 5px rgba(102, 102, 102, 0.1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1)
+            .certification-container-image
+                width: 100%
+                img
+                    width: 100%
+                    vertical-align: top
+                    border-radius: 10px 10px 0 0
+            .certification-text
+                padding: 0 30px 30px 30px
+                h3
+                    font-size: 1.5em
+                p
+                    font-weight: 300
+                .certification-button
+                    width: 100%
+                    margin-top: 30px
+                    a
+                        @extend .btn-courses
+                        &:hover
+                            background: rgba(0, 117, 169, .7)
+        .courses-container-3
+            @extend .styles-containers-2
+            &:hover
+                box-shadow: 0 0 10px 5px rgba(102, 102, 102, 0.1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1), 0 0 10px 5px rgba(102, 102, 102, .1)
+            .users-container-image
+                width: 100%
+                img
+                    width: 100%
+                    vertical-align: top
+                    border-radius: 10px 10px 0 0
+            .users-text
+                padding: 0 30px 30px 30px
+                h3
+                    font-size: 1.5em
+                p
+                    font-weight: 300
+                .users-button
+                    width: 100%
+                    margin-top: 30px
+                    a
+                        @extend .btn-courses
+                        &:hover
+                            background: rgba(0, 117, 169, .7)
